@@ -9,9 +9,9 @@ const timer = tv({
 const UPDATE_DELAY_IN_MS = 1000;
 
 export default function Timer({
-  className,
-  ...props
-}: React.ComponentPropsWithoutRef<"div">) {
+                                className,
+                                ...props
+                              }: React.ComponentPropsWithoutRef<"div">) {
   const [, rerender] = useState({});
   const { startedAt } = useGame();
 
