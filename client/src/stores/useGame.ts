@@ -106,6 +106,10 @@ export const useGame = create<UseGameStore>()((set, get) => ({
   },
 
   guess: (type: TicketType) => {
+    const { guesses } = get()
+    set({ guesses: [...guesses, type] });
+    // console.log(get().guesses, get().currentIndex, get().tickets);
+    console.log(get().guesses[get().currentIndex - 1] === get().tickets[get().currentIndex - 1].type);
     const { tickets, currentIndex, gameState, endGame } = get();
     const currentTicket = tickets[currentIndex];
 

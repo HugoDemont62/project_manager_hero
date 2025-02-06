@@ -42,7 +42,6 @@ export default function Game() {
 
   const ticketsToDisplay = [previousTicket, currentTicket, nextTicket].filter(Boolean);
 
-  useGuessKeybinds();
 
   return (
     <>

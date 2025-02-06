@@ -3,11 +3,12 @@ import Ticket from "./Ticket";
 import { useGame } from "@/stores/useGame";
 
 export default function Tickets() {
-  const { tickets, currentIndex } = useGame();
+  const { tickets, currentIndex, guesses } = useGame();
 
   const previousTicket = tickets[currentIndex - 1];
   const currentTicket = tickets[currentIndex];
   const nextTicket = tickets[currentIndex + 1];
+  const previousGuess = guesses[currentIndex - 1];
 
   const ticketsToDisplay = [previousTicket, currentTicket, nextTicket];
 
@@ -22,7 +23,7 @@ export default function Tickets() {
               rotateZ: 4,
               transformOrigin: "left",
             }}
-            animate={{ y: 0, opacity: 1, rotateZ: 0 }}
+            animate={{ y: 0, opacity: 1, rotateZ: 0, backgroundColor: previousGuess === previousTicket.type ? "green" : "transparent" }}
             exit={{ y: -100, opacity: 0, rotateZ: -2 }}
             transition={{
               type: "spring",
