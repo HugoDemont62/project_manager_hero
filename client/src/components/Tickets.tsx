@@ -16,15 +16,25 @@ export default function Tickets() {
       <AnimatePresence mode="popLayout">
         {ticketsToDisplay.map(({ id, description, type }, i) => (
           <motion.div
-            initial={{ y: 100, opacity: 0.5 }}
-            animate={{ y: 0, opacity: 1 }}
-            exit={{ y: -100, opacity: 0 }}
+            initial={{
+              y: 100,
+              opacity: 0.5,
+              rotateZ: 4,
+              transformOrigin: "left",
+            }}
+            animate={{ y: 0, opacity: 1, rotateZ: 0 }}
+            exit={{ y: -100, opacity: 0, rotateZ: -2 }}
+            transition={{
+              type: "spring",
+              stiffness: 260,
+              damping: 20,
+            }}
             key={id}
             layoutId={`ticket-${id}`}
           >
             <Ticket>
-              {description} ({currentIndex === i ? "current" : "not current"})
-              <span className="rounded-full bg-blue-800 text-xs w-min px-2 text-nowrap">
+              {description}
+              <span className="block rounded-full bg-blue-800 text-xs w-min px-2 text-nowrap">
                 {type}
               </span>
             </Ticket>

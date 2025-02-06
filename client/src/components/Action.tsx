@@ -1,20 +1,20 @@
 import { tv, VariantProps } from "tailwind-variants";
+import { motion } from "motion/react";
 
 const action = tv({
-  base: "p-4 bg-zinc-800 min-h-8 rounded-full text-white capitalize",
+  base: "p-4 min-h-32 text-xl border-2 border-transparent font-semibold bg-zinc-800 rounded-3xl text-white",
   variants: {
     variant: {
-      bug: "",
-      userStory: "",
-      task: "",
-      a: "",
-      golden: "bg-",
+      bug: "bg-red-900",
+      userStory: "bg-blue-900",
+      task: "bg-emerald-900",
+      a: "bg-amber-900",
     },
   },
 });
 
 interface ActionProps
-  extends React.ComponentPropsWithoutRef<"button">,
+  extends React.ComponentPropsWithoutRef<typeof motion.button>,
     VariantProps<typeof action> {}
 
 export default function Action({
@@ -24,8 +24,13 @@ export default function Action({
   ...props
 }: ActionProps) {
   return (
-    <button {...props} className={action({ variant, className })}>
+    <motion.button
+      {...props}
+      whileTap={{ scale: 0.98, rotateZ: 1 }}
+      whileHover={{ scale: 1.02 }}
+      className={action({ variant, className })}
+    >
       {children}
-    </button>
+    </motion.button>
   );
 }
