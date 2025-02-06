@@ -6,6 +6,7 @@ const ticket = tv({
   variants: {
     variant: {
       default: "bg-zinc-900",
+      primary: "bg-purple-500",
     },
   },
   defaultVariants: {

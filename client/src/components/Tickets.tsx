@@ -14,7 +14,7 @@ export default function Tickets() {
   return (
     <div className="flex container mx-auto flex-col gap-4">
       <AnimatePresence mode="popLayout">
-        {ticketsToDisplay.map(({ id, description, type }, i) => (
+        {ticketsToDisplay.map(({id, description, type}, i) => (
           <motion.div
             initial={{
               y: 100,
@@ -32,11 +32,8 @@ export default function Tickets() {
             key={id}
             layoutId={`ticket-${id}`}
           >
-            <Ticket>
+            <Ticket variant={i === 1 ? "primary" : "default"}>
               {description}
-              <span className="block rounded-full bg-blue-800 text-xs w-min px-2 text-nowrap">
-                {type}
-              </span>
             </Ticket>
           </motion.div>
         ))}
