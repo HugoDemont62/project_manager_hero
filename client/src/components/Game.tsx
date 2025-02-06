@@ -1,14 +1,15 @@
 "use client";
 
 import { AnimatePresence, motion } from "motion/react";
-import { useGame } from "@/stores/useGame";
+import { useGame} from "@/stores/useGame";
 import Ticket from "./Ticket";
 import { TICKET_TYPES, TICKETS_BY_DIFFICULTY, type Ticket as TicketType, type DifficultyLevel } from "@/data/tickets";
 import Action from "./Action";
 import Timer from "./Timer";
 import Score from "./Score";
+import Actions from "./Actions";
+import Tickets from "./Tickets";
 import { useEffect } from "react";
-import useGuessKeybinds from "@/hooks/useGuessKeybinds";
 
 export default function Game() {
   const { score, currentIndex, guess, difficulty = "Facile" } = useGame() as unknown as { 
@@ -45,20 +46,8 @@ export default function Game() {
 
   return (
     <>
-      <div className="container mx-auto flex items-center justify-between gap-4">
-        <Score>
-          <AnimatePresence mode="wait">
-            <motion.div
-              key={score}
-              initial={{ y: 50, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              exit={{ y: -50, opacity: 0 }}
-              transition={{ duration: 0.2 }}
-            >
-              {score}
-            </motion.div>
-          </AnimatePresence>
-        </Score>
+      <div className="container mx-auto flex items-center justify-between gap-4 h-full">
+        <Score />
         <Timer />
       </div>
 

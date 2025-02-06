@@ -8,7 +8,7 @@ export default function Home() {
   const { gameState } = useGame();
 
   return (
-    <div className="">
+    <div className="min-h-screen flex flex-col">
       {gameState === "idle" && <StartScreen />}
       {gameState === "ended" && <div>Game Over</div>}
       {gameState === "started" && <Game />}
