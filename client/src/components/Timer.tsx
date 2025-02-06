@@ -19,6 +19,9 @@ export default function Timer({
     ? Math.floor((Date.now() - startedAt) / 1000)
     : null;
 
+  const minutes = duration !== null ? Math.floor(duration / 60) : 0;
+  const seconds = duration !== null ? duration % 60 : 0;
+
   useEffect(() => {
     const interval = setInterval(() => {
       rerender({});
@@ -29,7 +32,7 @@ export default function Timer({
 
   return (
     <div {...props} className={timer({ className })}>
-      {duration}
+      {minutes}:{seconds < 10 ? '0' : ''}{seconds}
     </div>
   );
 }
