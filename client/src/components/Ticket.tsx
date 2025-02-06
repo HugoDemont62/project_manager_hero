@@ -16,9 +16,9 @@ interface TicketProps
   extends React.ComponentPropsWithoutRef<"div">,
     VariantProps<typeof ticket> {}
 
-export default function Ticket({ variant, children }: TicketProps) {
+export default function Ticket({ variant, children, ...props }: TicketProps) {
   return (
-    <div className={ticket({ variant })}>
+    <div {...props} className={ticket({ variant })}>
       <p>{children}</p>
     </div>
   );

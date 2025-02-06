@@ -20,7 +20,7 @@ export default function Action({
   ...props
 }: ActionProps) {
   return (
-    <button className={action({ variant, className })} {...props}>
+    <button {...props} className={action({ variant, className })}>
       {children}
     </button>
   );
