@@ -11,9 +11,16 @@ export interface ITicket {
   status: TicketStatus;
 }
 
+export enum BonusType {
+    Positive = 'positive',
+    Negative = 'negative'
+}
+
 export interface Bonus
 {
     title: string;
     description: string;
-
+    timer: number;
+    type: BonusType
+    impact: number;
 }
