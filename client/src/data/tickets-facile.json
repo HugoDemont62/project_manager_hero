@@ -1,0 +1,204 @@
+{
+  "tickets": [
+    {
+      "id": "bug-1",
+      "content": "Faute d'orthographe sur la page d'accueil",
+      "type": "Bugs"
+    },
+    {
+      "id": "bug-2",
+      "content": "Le bouton 'Suivant' est mal aligné sur mobile",
+      "type": "Bugs"
+    },
+    {
+      "id": "bug-3",
+      "content": "Les images sont trop grandes sur la page produit",
+      "type": "Bugs"
+    },
+    {
+      "id": "bug-4",
+      "content": "Le menu déroulant ne se ferme pas correctement",
+      "type": "Bugs"
+    },
+    {
+      "id": "bug-5",
+      "content": "Erreur 404 sur le lien 'Mentions légales'",
+      "type": "Bugs"
+    },
+    {
+      "id": "bug-6",
+      "content": "Le texte est illisible en mode sombre",
+      "type": "Bugs"
+    },
+    {
+      "id": "bug-7",
+      "content": "Les tooltips restent affichés trop longtemps",
+      "type": "Bugs"
+    },
+    {
+      "id": "bug-8",
+      "content": "Le logo est pixelisé sur grand écran",
+      "type": "Bugs"
+    },
+    {
+      "id": "bug-9",
+      "content": "Les liens du footer sont de la mauvaise couleur",
+      "type": "Bugs"
+    },
+    {
+      "id": "bug-10",
+      "content": "Le formulaire de contact est mal espacé",
+      "type": "Bugs"
+    },
+    {
+      "id": "feature-1",
+      "content": "Il faut un bouton pour activer le mode sombre",
+      "type": "Features"
+    },
+    {
+      "id": "feature-2",
+      "content": "On a besoin d'une page pour les questions fréquentes",
+      "type": "Features"
+    },
+    {
+      "id": "feature-3",
+      "content": "Le menu serait plus joli avec des petites icônes",
+      "type": "Features"
+    },
+    {
+      "id": "feature-4",
+      "content": "Les couleurs du site sont trop vieilles, il faut les changer",
+      "type": "Features"
+    },
+    {
+      "id": "feature-5",
+      "content": "Les utilisateurs veulent un bouton pour remonter en haut",
+      "type": "Features"
+    },
+    {
+      "id": "feature-6",
+      "content": "Il manque une page qui présente notre entreprise",
+      "type": "Features"
+    },
+    {
+      "id": "feature-7",
+      "content": "Le site manque d'animations quand on clique",
+      "type": "Features"
+    },
+    {
+      "id": "feature-8",
+      "content": "Il faut ajouter Facebook et Twitter dans le footer",
+      "type": "Features"
+    },
+    {
+      "id": "feature-9",
+      "content": "On ne sait pas où on est dans le site, il faut un menu de navigation",
+      "type": "Features"
+    },
+    {
+      "id": "feature-10",
+      "content": "Les clients ne savent pas comment nous contacter",
+      "type": "Features"
+    },
+    {
+      "id": "support-1",
+      "content": "Comment changer mon mot de passe ?",
+      "type": "Support"
+    },
+    {
+      "id": "support-2",
+      "content": "Où trouver mes factures ?",
+      "type": "Support"
+    },
+    {
+      "id": "support-3",
+      "content": "Comment modifier mon adresse email ?",
+      "type": "Support"
+    },
+    {
+      "id": "support-4",
+      "content": "Je ne trouve pas le bouton déconnexion",
+      "type": "Support"
+    },
+    {
+      "id": "support-5",
+      "content": "Comment imprimer ma facture ?",
+      "type": "Support"
+    },
+    {
+      "id": "support-6",
+      "content": "Où sont mes paramètres de compte ?",
+      "type": "Support"
+    },
+    {
+      "id": "support-7",
+      "content": "Comment contacter le support ?",
+      "type": "Support"
+    },
+    {
+      "id": "support-8",
+      "content": "Je ne peux pas cliquer sur le bouton connexion",
+      "type": "Support"
+    },
+    {
+      "id": "support-9",
+      "content": "Comment changer ma photo de profil ?",
+      "type": "Support"
+    },
+    {
+      "id": "support-10",
+      "content": "Où trouver le guide d'utilisation ?",
+      "type": "Support"
+    },
+    {
+      "id": "tech-1",
+      "content": "Mettre à jour jQuery vers la dernière version",
+      "type": "Soucis Techniques"
+    },
+    {
+      "id": "tech-2",
+      "content": "Corriger les warnings dans la console",
+      "type": "Soucis Techniques"
+    },
+    {
+      "id": "tech-3",
+      "content": "Optimiser les images du carrousel",
+      "type": "Soucis Techniques"
+    },
+    {
+      "id": "tech-4",
+      "content": "Mettre à jour les meta tags SEO",
+      "type": "Soucis Techniques"
+    },
+    {
+      "id": "tech-5",
+      "content": "Ajouter les favicons manquants",
+      "type": "Soucis Techniques"
+    },
+    {
+      "id": "tech-6",
+      "content": "Corriger l'indentation du code CSS",
+      "type": "Soucis Techniques"
+    },
+    {
+      "id": "tech-7",
+      "content": "Mettre à jour le fichier robots.txt",
+      "type": "Soucis Techniques"
+    },
+    {
+      "id": "tech-8",
+      "content": "Optimiser le chargement des polices",
+      "type": "Soucis Techniques"
+    },
+    {
+      "id": "tech-9",
+      "content": "Corriger les liens cassés du sitemap",
+      "type": "Soucis Techniques"
+    },
+    {
+      "id": "tech-10",
+      "content": "Mettre à jour les attributs alt des images",
+      "type": "Soucis Techniques"
+    }
+  ]
+} 

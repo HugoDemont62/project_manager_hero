@@ -1,0 +1,204 @@
+{
+  "tickets": [
+    {
+      "id": "bug-1",
+      "content": "Le système de paiement affiche une erreur 500 de manière aléatoire",
+      "type": "Bugs"
+    },
+    {
+      "id": "bug-2",
+      "content": "Race condition dans la mise à jour simultanée des données",
+      "type": "Bugs"
+    },
+    {
+      "id": "bug-3",
+      "content": "Memory leak dans l'application après plusieurs heures d'utilisation",
+      "type": "Bugs"
+    },
+    {
+      "id": "bug-4",
+      "content": "Corruption des données lors de la synchronisation multi-devices",
+      "type": "Bugs"
+    },
+    {
+      "id": "bug-5",
+      "content": "Deadlock dans le système de réservation concurrent",
+      "type": "Bugs"
+    },
+    {
+      "id": "bug-6",
+      "content": "Fuite de mémoire dans le worker de traitement d'images",
+      "type": "Bugs"
+    },
+    {
+      "id": "bug-7",
+      "content": "Incohérence dans la réplication de la base de données",
+      "type": "Bugs"
+    },
+    {
+      "id": "bug-8",
+      "content": "Le système de cache distribué cause des conflits de données",
+      "type": "Bugs"
+    },
+    {
+      "id": "bug-9",
+      "content": "Erreurs intermittentes dans le système de websockets",
+      "type": "Bugs"
+    },
+    {
+      "id": "bug-10",
+      "content": "Problème de concurrence dans le système de verrouillage",
+      "type": "Bugs"
+    },
+    {
+      "id": "feature-1",
+      "content": "Architecture monolithique limitant la scalabilité horizontale",
+      "type": "Features"
+    },
+    {
+      "id": "feature-2",
+      "content": "Pertinence des suggestions utilisateur sous-optimale",
+      "type": "Features"
+    },
+    {
+      "id": "feature-3",
+      "content": "Latence excessive sur les endpoints internationaux",
+      "type": "Features"
+    },
+    {
+      "id": "feature-4",
+      "content": "Temps d'indisponibilité critique pendant les déploiements",
+      "type": "Features"
+    },
+    {
+      "id": "feature-5",
+      "content": "Taux de faux positifs élevé dans les transactions",
+      "type": "Features"
+    },
+    {
+      "id": "feature-6",
+      "content": "Vulnérabilité potentielle dans la redondance des données",
+      "type": "Features"
+    },
+    {
+      "id": "feature-7",
+      "content": "Fragmentation des identités utilisateurs inter-services",
+      "type": "Features"
+    },
+    {
+      "id": "feature-8",
+      "content": "Temps de réponse exponentiel sur les requêtes complexes",
+      "type": "Features"
+    },
+    {
+      "id": "feature-9",
+      "content": "Visibilité limitée sur la santé des services",
+      "type": "Features"
+    },
+    {
+      "id": "feature-10",
+      "content": "Perte de cohérence lors des migrations incrémentales",
+      "type": "Features"
+    },
+    {
+      "id": "support-1",
+      "content": "Problème de performance sur le cluster Kubernetes en production",
+      "type": "Support"
+    },
+    {
+      "id": "support-2",
+      "content": "Le système de backup échoue sur les volumes importants",
+      "type": "Support"
+    },
+    {
+      "id": "support-3",
+      "content": "Latence élevée sur les requêtes GraphQL complexes",
+      "type": "Support"
+    },
+    {
+      "id": "support-4",
+      "content": "Le système de monitoring ne détecte pas certaines pannes",
+      "type": "Support"
+    },
+    {
+      "id": "support-5",
+      "content": "Problèmes de synchronisation avec le service tiers",
+      "type": "Support"
+    },
+    {
+      "id": "support-6",
+      "content": "Le système de logging distributed trace est incomplet",
+      "type": "Support"
+    },
+    {
+      "id": "support-7",
+      "content": "Les métriques Prometheus sont incohérentes",
+      "type": "Support"
+    },
+    {
+      "id": "support-8",
+      "content": "Le failover automatique ne fonctionne pas correctement",
+      "type": "Support"
+    },
+    {
+      "id": "support-9",
+      "content": "Problèmes de performance avec le service mesh",
+      "type": "Support"
+    },
+    {
+      "id": "support-10",
+      "content": "Le système de rate limiting distribué est défaillant",
+      "type": "Support"
+    },
+    {
+      "id": "tech-1",
+      "content": "Migration vers une architecture zero-trust",
+      "type": "Soucis Techniques"
+    },
+    {
+      "id": "tech-2",
+      "content": "Optimisation du cluster Elasticsearch",
+      "type": "Soucis Techniques"
+    },
+    {
+      "id": "tech-3",
+      "content": "Mise en place d'un système de blue-green deployment",
+      "type": "Soucis Techniques"
+    },
+    {
+      "id": "tech-4",
+      "content": "Implémentation d'un système de chaos engineering",
+      "type": "Soucis Techniques"
+    },
+    {
+      "id": "tech-5",
+      "content": "Optimisation du pipeline de CI/CD pour le multi-cloud",
+      "type": "Soucis Techniques"
+    },
+    {
+      "id": "tech-6",
+      "content": "Migration vers une architecture serverless",
+      "type": "Soucis Techniques"
+    },
+    {
+      "id": "tech-7",
+      "content": "Mise en place d'un système de service mesh",
+      "type": "Soucis Techniques"
+    },
+    {
+      "id": "tech-8",
+      "content": "Implémentation d'un système de tracing distribué",
+      "type": "Soucis Techniques"
+    },
+    {
+      "id": "tech-9",
+      "content": "Optimisation des performances du cluster Kafka",
+      "type": "Soucis Techniques"
+    },
+    {
+      "id": "tech-10",
+      "content": "Migration vers une architecture event-driven",
+      "type": "Soucis Techniques"
+    }
+  ]
+} 

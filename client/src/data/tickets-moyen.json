@@ -1,0 +1,204 @@
+{
+  "tickets": [
+    {
+      "id": "bug-1",
+      "content": "Erreur 400 lors de la soumission des formulaires de contact",
+      "type": "Bugs"
+    },
+    {
+      "id": "bug-2",
+      "content": "Les notifications ne sont pas envoyées sur mobile",
+      "type": "Bugs"
+    },
+    {
+      "id": "bug-3",
+      "content": "Le calcul des totaux est incorrect dans le panier",
+      "type": "Bugs"
+    },
+    {
+      "id": "bug-4",
+      "content": "La validation du formulaire ne fonctionne pas en temps réel",
+      "type": "Bugs"
+    },
+    {
+      "id": "bug-5",
+      "content": "Les filtres de recherche ne se réinitialisent pas",
+      "type": "Bugs"
+    },
+    {
+      "id": "bug-6",
+      "content": "Le système de pagination saute des pages",
+      "type": "Bugs"
+    },
+    {
+      "id": "bug-7",
+      "content": "Les données du tableau ne se mettent pas à jour automatiquement",
+      "type": "Bugs"
+    },
+    {
+      "id": "bug-8",
+      "content": "Le tri des colonnes inverse l'ordre des données",
+      "type": "Bugs"
+    },
+    {
+      "id": "bug-9",
+      "content": "Les sessions expirent trop rapidement",
+      "type": "Bugs"
+    },
+    {
+      "id": "bug-10",
+      "content": "Le système de cache provoque des incohérences d'affichage",
+      "type": "Bugs"
+    },
+    {
+      "id": "feature-1",
+      "content": "Authentification via les comptes Google manquante",
+      "type": "Features"
+    },
+    {
+      "id": "feature-2",
+      "content": "Absence de notifications push sur l'application",
+      "type": "Features"
+    },
+    {
+      "id": "feature-3",
+      "content": "Dashboard des statistiques à développer",
+      "type": "Features"
+    },
+    {
+      "id": "feature-4",
+      "content": "Les filtres actuels sont trop basiques pour nos besoins",
+      "type": "Features"
+    },
+    {
+      "id": "feature-5",
+      "content": "Possibilité d'export Excel demandée par les utilisateurs",
+      "type": "Features"
+    },
+    {
+      "id": "feature-6",
+      "content": "Besoin d'un éditeur WYSIWYG pour le contenu",
+      "type": "Features"
+    },
+    {
+      "id": "feature-7",
+      "content": "Organisation par tags requise pour le contenu",
+      "type": "Features"
+    },
+    {
+      "id": "feature-8",
+      "content": "La recherche actuelle manque de fonctionnalités avancées",
+      "type": "Features"
+    },
+    {
+      "id": "feature-9",
+      "content": "Structure hiérarchique nécessaire pour les commentaires",
+      "type": "Features"
+    },
+    {
+      "id": "feature-10",
+      "content": "Communication par email à intégrer au système",
+      "type": "Features"
+    },
+    {
+      "id": "support-1",
+      "content": "L'import de données Excel échoue régulièrement",
+      "type": "Support"
+    },
+    {
+      "id": "support-2",
+      "content": "Les notifications par email arrivent en spam",
+      "type": "Support"
+    },
+    {
+      "id": "support-3",
+      "content": "Le système de recherche ne trouve pas certains résultats",
+      "type": "Support"
+    },
+    {
+      "id": "support-4",
+      "content": "Les rapports PDF ne s'ouvrent pas correctement",
+      "type": "Support"
+    },
+    {
+      "id": "support-5",
+      "content": "L'authentification à deux facteurs ne fonctionne pas",
+      "type": "Support"
+    },
+    {
+      "id": "support-6",
+      "content": "Les graphiques ne s'affichent pas dans les rapports",
+      "type": "Support"
+    },
+    {
+      "id": "support-7",
+      "content": "Le système de filtres avancés est peu intuitif",
+      "type": "Support"
+    },
+    {
+      "id": "support-8",
+      "content": "Les exports de données sont incomplets",
+      "type": "Support"
+    },
+    {
+      "id": "support-9",
+      "content": "Le système de tri ne fonctionne pas sur certaines colonnes",
+      "type": "Support"
+    },
+    {
+      "id": "support-10",
+      "content": "Les utilisateurs ne reçoivent pas les emails de réinitialisation",
+      "type": "Support"
+    },
+    {
+      "id": "tech-1",
+      "content": "Optimiser les requêtes SQL sur la page catalogue",
+      "type": "Soucis Techniques"
+    },
+    {
+      "id": "tech-2",
+      "content": "Mettre en place le lazy loading des images",
+      "type": "Soucis Techniques"
+    },
+    {
+      "id": "tech-3",
+      "content": "Configurer le système de cache Redis",
+      "type": "Soucis Techniques"
+    },
+    {
+      "id": "tech-4",
+      "content": "Optimiser les performances de l'API REST",
+      "type": "Soucis Techniques"
+    },
+    {
+      "id": "tech-5",
+      "content": "Mettre à jour les dépendances Node.js",
+      "type": "Soucis Techniques"
+    },
+    {
+      "id": "tech-6",
+      "content": "Configurer le rate limiting sur l'API",
+      "type": "Soucis Techniques"
+    },
+    {
+      "id": "tech-7",
+      "content": "Optimiser les indexes de la base de données",
+      "type": "Soucis Techniques"
+    },
+    {
+      "id": "tech-8",
+      "content": "Mettre en place la compression Gzip",
+      "type": "Soucis Techniques"
+    },
+    {
+      "id": "tech-9",
+      "content": "Configurer le load balancer",
+      "type": "Soucis Techniques"
+    },
+    {
+      "id": "tech-10",
+      "content": "Optimiser le bundle JavaScript",
+      "type": "Soucis Techniques"
+    }
+  ]
+} 
