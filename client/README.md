@@ -1,36 +1,49 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🎮 Tickets Master
 
-## Getting Started
+## 🎯 Qu'est ce que c'est ?
 
-First, run the development server:
+Tickets Master c'est l'application pour faire de toi un professionnel de la gestion de tickets !
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Tu galères encore à trier tes tickets sur Jira ?
+Tu veux enfin pouvoir gérer tes tickets comme un boss ?
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Alors, accroche-toi parce que ce jeu est là pour toi !
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🎲 Gameplay
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Dans ce jeu captivant, tu disposes de **5 minutes** pour démontrer tes compétences en gestion de projet.
 
-## Learn More
+Ta mission ? Trier rapidement un flux continu de tickets en quatre catégories essentielles :
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- 🐛 **Bugs** - Les problèmes à résoudre
+- ✨ **Features** - Les nouvelles fonctionnalités
+- 🤝 **Support** - L'assistance aux utilisateurs
+- 🔧 **Soucis Techniques** - Les problèmes d'infrastructure
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Les tickets arriveront en rafale donc la vitesse sera de mise pour être le plus efficace et trier correctement le plus de tickets possible dans le temps imparti.
 
-## Deploy on Vercel
+### 🎁 Bonus
+Pour pimenter l'expérience, des événements spéciaux surviennent aléatoirement, pouvant soit faciliter soit complexifier ta mission. Restez sur tes gardes !🛡️
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📋 Organisation du Projet
+
+Notre équipe utilise une méthodologie agile avec Trello pour la gestion du projet.
+➡️ [Accéder au Trello](https://trello.com/invite/b/67a4b9130172c6c50af6e2b2/ATTI8951725d2018935baf4e9bc50591a23e64A8BD96/project-manager-hero)
+
+## 🛠️ Stack Technique
+
+- **Next.js** - Framework React moderne
+- **Tailwind CSS** - Framework CSS utilitaire
+- **Vercel** - Plateforme de déploiement
+
+## 👥 L'Équipe de Développement
+
+- [@Hugo Demont](https://github.com/HugoDemont62) - Chef de projet Web
+- [@Hugo Potier](https://github.com/hugo-potpot) - Développeur Full-Stack
+- [@Romain Leblond](https://github.com/sqmasep) - Développeur Full-Stack
+- [@Sacha Debusschère](https://github.com/SachaDebusschere) - Chef de projet Web
+
+---
+*Projet développé dans le cadre de notre formation en développement web, pour le module de gestion de projet*
