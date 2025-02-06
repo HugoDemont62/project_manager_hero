@@ -1,9 +1,9 @@
-import {AnimatePresence, motion} from "motion/react";
+import { AnimatePresence, motion } from "motion/react";
 import Ticket from "./Ticket";
-import {useGame} from "@/stores/useGame";
+import { useGame } from "@/stores/useGame";
 
 export default function Tickets() {
-  const {tickets, currentIndex} = useGame();
+  const { tickets, currentIndex } = useGame();
 
   const previousTicket = tickets[currentIndex - 1];
   const currentTicket = tickets[currentIndex];
@@ -16,9 +16,19 @@ export default function Tickets() {
       <AnimatePresence mode="popLayout">
         {ticketsToDisplay.map(({id, description, type}, i) => (
           <motion.div
-            initial={{y: 100, opacity: 0.5}}
-            animate={{y: 0, opacity: 1}}
-            exit={{y: -100, opacity: 0}}
+            initial={{
+              y: 100,
+              opacity: 0.5,
+              rotateZ: 4,
+              transformOrigin: "left",
+            }}
+            animate={{ y: 0, opacity: 1, rotateZ: 0 }}
+            exit={{ y: -100, opacity: 0, rotateZ: -2 }}
+            transition={{
+              type: "spring",
+              stiffness: 260,
+              damping: 20,
+            }}
             key={id}
             layoutId={`ticket-${id}`}
           >
