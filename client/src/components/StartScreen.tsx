@@ -1,7 +1,8 @@
 import { useGame } from '@/stores/useGame'
 
-export default function StartScreen () {
-  const {startGame} = useGame()
+export default function StartScreen() {
+  const { startGame } = useGame();
+
   return (
     <div className="relative flex flex-col min-h-screen text-white bg-black">
       <div className="absolute inset-0 overflow-hidden">
@@ -24,5 +25,5 @@ export default function StartScreen () {
         </button>
       </div>
     </div>
-  )
+  );
 }
