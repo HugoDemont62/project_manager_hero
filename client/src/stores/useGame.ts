@@ -1,4 +1,4 @@
-import { TicketType } from "@/data/tickets";
+import { TICKET_TYPES, TicketType } from "@/data/tickets";
 import { create } from "zustand";
 
 interface Ticket {
@@ -16,6 +16,7 @@ interface UseGameStore {
   score: number;
 
   tickets: Ticket[];
+  guesses: TicketType[];
 
   startGame: () => void;
   endGame: () => void;
@@ -30,23 +31,13 @@ interface UseGameStore {
   removeTicket: (ticketId: string) => void;
 }
 
-const BASE_TICKETS = [
-  {
-    id: "1",
-    type: "task",
-    description: "ticket 1",
-  },
-  {
-    id: "2",
-    type: "bug",
-    description: "ticket 2",
-  },
-  {
-    id: "3",
-    type: "user-story",
-    description: "ticket 3",
-  },
-] satisfies Ticket[];
+const BASE_TICKETS = Array.from({ length: 150 }).map((item, i) => {
+  return {
+    id: i.toString(),
+    type: TICKET_TYPES[Math.floor(Math.random() * TICKET_TYPES.length)],
+    description: `This is the ticket ${i}`,
+  };
+}) satisfies Ticket[];
 
 export const useGame = create<UseGameStore>()((set, get) => ({
   get gameState() {
@@ -65,6 +56,7 @@ export const useGame = create<UseGameStore>()((set, get) => ({
   startedAt: null,
   endedAt: null,
   tickets: BASE_TICKETS,
+  guesses: [],
 
   resetGame: () => {
     set({

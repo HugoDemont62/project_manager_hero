@@ -1,42 +1,35 @@
-import React, { useState, useEffect } from 'react';
+import { useGame } from "@/stores/useGame";
+import { useEffect, useState } from "react";
 import { tv } from "tailwind-variants";
 
 const timer = tv({
   base: "",
 });
 
-interface TimerProps {
-  initialDuration: number;
-  className?: string;
-}
+const UPDATE_DELAY_IN_MS = 1000;
 
-const Timer: React.FC<TimerProps> = ({ initialDuration, className }) => {
-  const [duration, setDuration] = useState(initialDuration);
+export default function Timer({
+                                className,
+                                ...props
+                              }: React.ComponentPropsWithoutRef<"div">) {
+  const [, rerender] = useState({});
+  const { startedAt } = useGame();
+
+  const duration = startedAt
+    ? Math.floor((Date.now() - startedAt) / 1000)
+    : null;
 
   useEffect(() => {
-    const intervalId = setInterval(() => {
-      setDuration(prevDuration => {
-        if (prevDuration > 0) {
-          return prevDuration - 1;
-        } else {
-          clearInterval(intervalId);
-          console.log("Time's up!");
-          return 0;
-        }
-      });
-    }, 1000);
+    const interval = setInterval(() => {
+      rerender({});
+    }, UPDATE_DELAY_IN_MS);
 
-    return () => clearInterval(intervalId);
+    return () => clearInterval(interval);
   }, []);
 
-  const minutes = Math.floor(duration / 60);
-  const seconds = duration % 60;
-
   return (
-    <div className={timer({ className })}>
-      {minutes}:{seconds < 10 ? '0' : ''}{seconds}
+    <div {...props} className={timer({ className })}>
+      {duration}
     </div>
   );
-};
-
-export default Timer;
+}
