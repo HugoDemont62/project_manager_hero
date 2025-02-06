@@ -10,7 +10,6 @@ const UPDATE_DELAY_IN_MS = 1000;
 
 export default function Timer({
   className,
-  children,
   ...props
 }: React.ComponentPropsWithoutRef<"div">) {
   const [, rerender] = useState({});
