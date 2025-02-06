@@ -4,6 +4,10 @@ const action = tv({
   base: "p-4 bg-zinc-800 min-h-8 rounded-full text-white",
   variants: {
     variant: {
+      bug: "",
+      userStory: "",
+      task: "",
+      a: "",
       golden: "bg-",
     },
   },

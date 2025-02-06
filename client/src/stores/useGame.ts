@@ -16,6 +16,7 @@ interface UseGameStore {
   score: number;
 
   tickets: Ticket[];
+  guesses: TicketType[];
 
   startGame: () => void;
   endGame: () => void;
@@ -55,6 +56,7 @@ export const useGame = create<UseGameStore>()((set, get) => ({
   startedAt: null,
   endedAt: null,
   tickets: BASE_TICKETS,
+  guesses: [],
 
   resetGame: () => {
     set({

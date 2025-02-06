@@ -1,7 +1,7 @@
 import { tv, VariantProps } from "tailwind-variants";
 
 const ticket = tv({
-  base: "p-12 border font-semibold text-white text-2xl border-zinc-800 rounded-lg",
+  base: "p-12 select-none border font-semibold text-white text-2xl border-zinc-800 rounded-lg",
   variants: {
     variant: {
       default: "bg-zinc-900",
