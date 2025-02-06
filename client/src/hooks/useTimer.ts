@@ -20,6 +20,13 @@ export function useTimer() {
     if (endedAt) {
       shouldRun.current = false;
     }
+
+    if (shouldRun.current) {
+      timer.current = setInterval(() => {
+        duration.current = Date.now() - (startedAt ?? Date.now());
+        update();
+      }, 1000);
+    }
   }, [startedAt, endedAt, shouldRun]);
 
   function start() {
